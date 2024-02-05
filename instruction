@@ -1,0 +1,13 @@
+# App文件加里面的 flask app的主要内容，
+其中包括 config；database；email；view；模块等；
+
+1. 需要修改的地方==>  database-config 修改为自己的数据库名称；用户名和密码等；
+2. 数据库需要自己手动迁移; 迁移后将在跟目录下生成 migrations 目录
+ 将项目根目录拖动到 terminal 终端中，运行一下代码
+ flask db init
+ flask db migrate
+ flask db upgrade
+ flask db downgrade (如果需要降级，则运行此行代码)
+
+ 3. 然后你可以在source 里面添加一些 自己的逻辑代码
+ 4. 默认的 view 主页的路由 显示 home success!
